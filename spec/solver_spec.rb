@@ -18,4 +18,13 @@ describe 'TDD unit tests fot Solver class methods' do
       expect { Solver.new.factorial(-1) }.to raise_error(RuntimeError)
     end
   end
+
+  context 'test string reverse' do
+    it 'should return the reverse of hello' do
+      string = @solution.reverse('hello')
+      expect(string).to eq('olleh')
+    end
+  end
+
+
 end
