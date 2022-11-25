@@ -25,6 +25,23 @@ describe 'TDD unit tests fot Solver class methods' do
       expect(string).to eq('olleh')
     end
   end
-
+  context 'test fizzbuzz method' do
+    it 'should return fizzbuzzfor numbers divisible by both 5 and 3' do
+      number = @solution.fizzbuzz(15)
+      expect(number).to eq('fizzbuzz')
+    end
+    it 'should return fizz for numbers divisible by 3 only' do
+      number = @solution.fizzbuzz(9)
+      expect(number).to eq('fizz')
+    end
+    it 'should return buzz for numbers which are divisible by 5 only' do
+      number = @solution.fizzbuzz(25)
+      expect(number).to eq('buzz')
+    end
+    it 'should return the input number as a string if it is neither divisible by 3 nor 5' do
+      number = @solution.fizzbuzz(2)
+      expect(number).to eq('2')
+    end
+  end
 
 end
