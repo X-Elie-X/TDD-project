@@ -11,5 +11,18 @@ class Solver
     def reverse (word)
         word.reverse
     end
-
+    def fizzbuzz (num)
+        fizz = (num % 3).zero?
+        buzz = (num % 5).zero?
+        fizz_buzz = (num % 3).zero? && (num % 5).zero?
+        if fizz_buzz
+        'fizzbuzz'
+        elsif fizz
+        'fizz'
+        elsif buzz
+        'buzz'
+        else
+        num.to_s
+        end
+    end
 end
