@@ -3,7 +3,7 @@
 
 # TDD-project
 
->In this project you will implement a class with some methods, but you will do it by doing test-driven development (TDD). Remember that the idea is to write tests first and then the code. This will be verified in your commits history, so it is important to use the proper sequence.
+>In this project we implemented a class solver with some methods, by doing test-driven development (TDD). 
 
 
 ## Built With
