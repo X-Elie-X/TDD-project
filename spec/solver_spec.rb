@@ -43,5 +43,4 @@ describe 'TDD unit tests fot Solver class methods' do
       expect(number).to eq('2')
     end
   end
-
 end
